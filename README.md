@@ -26,7 +26,7 @@ cat some_file.py | hi | less -r
 
 ### Language Detection
 
-Currently [https://www.npmjs.com/package/language-detect](language-detect) is used to detect the language via a shebang string or filename extension if possible, or using a Bayesian [https://github.com/tj/node-language-classifier](Classifier) with a few languages supported:
+Currently [language-detect](https://www.npmjs.com/package/language-detect) is used to detect the language via a shebang string or filename extension if possible, or using a [Bayesian Classifier](https://github.com/tj/node-language-classifier) with a few languages supported:
 
 * Ruby
 * Python
@@ -42,7 +42,7 @@ Specifying the language manually or forcing a particular Syntax Brush, is curren
 
 ### Syntax Highlighting Support
 
-Highlighting is done using the open source [http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/](SyntaxHighlighter) by alexgorbatchev. You can find the core files and individual language *Brushes* in the `lib/scripts` folder. 
+Highlighting is done using the open source [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/) by alexgorbatchev. You can find the core files and individual language *Brushes* in the `lib/scripts` folder. 
 
 **Notice** If new Brushes are added or modified, you can copy the `scripts` folder from alexgorbatchev's repo and overwrite the existing folder. Simply patch references to the **XRegExp** from local paths to `require('xregexp')` since it is included as a dependancy here.
 
@@ -75,7 +75,7 @@ Currently the following languages can be highlighted:
 
 ### Color Support
 
-See the [https://github.com/chalk/chalk](chalk) repo for more information
+See the [chalk](https://github.com/chalk/chalk) repo for more information
 
 ### Licence
 
